@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router'
-import { useContext } from 'react'
+import { useContext, useState, useEffect } from 'react'
 import NavBar from './components/NavBar/NavBar'
 import SignUpForm from './components/SignUpForm/SignUpForm'
 import Landing from './components/Landing/Landing'
@@ -11,6 +11,13 @@ import { UserContext } from './contexts/UserContext'
 const App = () => {
 
   const { user } = useContext(UserContext)
+
+  const [hoots, setHoots] = useState([])
+
+  const fetchAllHoots = async () => {
+    fetchAllHoots()
+  }
+
 
   return (
     <>
